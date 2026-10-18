@@ -1,0 +1,12 @@
+[project]
+name = "greg"
+version = "0.1.0"
+description = "Graph Hacks Track 1: evidence-driven actions with FalkorDB"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "falkordb", "python-dotenv", "fastapi>=0.115", "uvicorn>=0.34",
+    "google-genai>=2.31,<3", "mcp>=2.3,<3", "pytest>=8.0", "httpx>=0.28",
+]
+
+[tool.uv]
+package = false

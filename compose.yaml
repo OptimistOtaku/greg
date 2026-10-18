@@ -1,0 +1,19 @@
+name: greg
+services:
+  falkordb:
+    image: ${FALKORDB_IMAGE:-falkordb/falkordb@sha256:b0bdcac2cbaff989e77cb0610439b7a9289e86de033ccbbd4368b66fb680ae7a}
+    ports:
+      - "127.0.0.1:${FALKORDB_PORT:-6379}:6379"
+      - "127.0.0.1:${FALKORDB_BROWSER_PORT:-3001}:3000"
+    environment:
+      REDIS_ARGS: "--appendonly yes --appendfsync everysec"
+    volumes:
+      - falkordb_data:/var/lib/falkordb/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+      start_period: 15s
+volumes:
+  falkordb_data:

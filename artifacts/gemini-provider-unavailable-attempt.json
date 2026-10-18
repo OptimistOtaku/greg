@@ -1,0 +1,91 @@
+{
+  "timestamp_utc": "2026-10-18T16:07:21.757023+00:00",
+  "controller": "live Gemini, no simulation fallback",
+  "configuration": {
+    "scenarios": [
+      "nominal",
+      "blocked-corridor",
+      "mid-mission-body-outage"
+    ],
+    "max_turns": 60,
+    "base_url": "http://127.0.0.1:8000"
+  },
+  "results": [
+    {
+      "scenario": "nominal",
+      "run_id": "mission-99708b337218",
+      "turns": [
+        {
+          "turn": 1,
+          "elapsed_ms": 9513.512,
+          "agent": "agent-engineer",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "elapsed_ms": 8840.224,
+          "agent": "agent-scout",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "elapsed_ms": 10445.962,
+          "agent": "agent-engineer",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "elapsed_ms": 10670.175,
+          "agent": "agent-scout",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 5,
+          "elapsed_ms": 12196.477,
+          "agent": "agent-engineer",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 6,
+          "elapsed_ms": 8719.759,
+          "agent": "agent-scout",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        }
+      ],
+      "completed": false,
+      "failure": {
+        "type": "HTTPStatusError",
+        "http_status": 500
+      },
+      "seconds": 68.408,
+      "progress": {
+        "done": 2,
+        "total": 7
+      },
+      "metrics": {
+        "actions": 4,
+        "observations": 2,
+        "handoffs": 0
+      },
+      "model_turns": 7,
+      "verification_edges": 0,
+      "reported_tokens": 46293,
+      "fault_injected": false
+    }
+  ],
+  "scope": "Three authored demo trials; not a statistical model benchmark",
+  "model": "gemini-3.8-flash",
+  "status": "incomplete"
+}

@@ -1,0 +1,12 @@
+/* The embedded Codex browser can be narrower/shorter than a laptop window. */
+body{min-width:700px}.app-shell{height:100dvh;min-height:0;overflow:hidden}.workspace{height:auto;min-height:0;flex:1}.viewport{min-height:0}.channel-toggle,.channel-close{display:none}
+@media(max-width:950px){
+ .channel-toggle{display:flex;align-items:center;gap:6px;font-size:9px;color:#92b4c1;padding:7px 8px;border:1px solid #304855;border-radius:3px}
+ .stage-phase{display:none}.channel-close{display:flex;align-items:center;justify-content:center;padding:0;color:#8ba9b9}
+ .activity-panel.mobile-open{display:flex;position:fixed;right:0;top:76px;bottom:39px;width:295px;z-index:30;box-shadow:-20px 0 70px #0009}
+ .viewport-title{top:20px;left:22px}.viewport-title h2{font-size:25px}.viewport-title>span{font-size:6px}
+ .viewport-title p{font-size:8px}.crew-main strong small{display:none}.crew-section{padding:11px 10px 12px}.crew-main{padding:10px 8px}
+ .crew-heading{margin-bottom:11px}.run-controls{height:59px;padding:0 15px}.controller-label small{font-size:7px}.viewport-bottom>span{font-size:5px}
+ .app-footer{padding:0 15px}.app-footer>span{font-size:5px}.app-footer>div{gap:10px}.app-footer button{font-size:7px}.app-footer select{font-size:7px;max-width:112px}
+}
+@media(max-height:760px){.viewport{min-height:0}.crew-section{padding-top:11px;padding-bottom:11px}.crew-heading{margin-bottom:10px}.mission-panel{padding-top:20px}.mission-panel h1{margin-top:22px;margin-bottom:15px}.mission-progress{margin-top:19px}.objectives{margin-top:19px}.objective{margin-bottom:13px}.mission-footer{padding-bottom:16px}.test-conditions{padding-top:17px;padding-bottom:17px}}

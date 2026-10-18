@@ -1,0 +1,961 @@
+{
+  "timestamp_utc": "2026-10-18T16:10:54.687166+00:00",
+  "controller": "live Gemini, no simulation fallback",
+  "configuration": {
+    "scenarios": [
+      "nominal",
+      "blocked-corridor",
+      "mid-mission-body-outage"
+    ],
+    "max_turns": 60,
+    "base_url": "http://127.0.0.1:8000"
+  },
+  "results": [
+    {
+      "scenario": "nominal",
+      "run_id": "mission-07e7ae6f0654",
+      "turns": [
+        {
+          "turn": 1,
+          "elapsed_ms": 13732.676,
+          "agent": "agent-engineer",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "elapsed_ms": 11141.023,
+          "agent": "agent-scout",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "elapsed_ms": 8254.871,
+          "agent": "agent-engineer",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "elapsed_ms": 7417.256,
+          "agent": "agent-scout",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 5,
+          "elapsed_ms": 13413.537,
+          "agent": "agent-engineer",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 6,
+          "elapsed_ms": 9007.812,
+          "agent": "agent-scout",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 7,
+          "elapsed_ms": 10005.422,
+          "agent": "agent-scout",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 8,
+          "elapsed_ms": 8077.952,
+          "agent": "agent-scout",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 9,
+          "elapsed_ms": 11053.262,
+          "agent": "agent-scout",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 10,
+          "elapsed_ms": 8803.551,
+          "agent": "agent-carrier",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 11,
+          "elapsed_ms": 18896.753,
+          "agent": "agent-carrier",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 12,
+          "elapsed_ms": 14614.406,
+          "agent": "agent-carrier",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 13,
+          "elapsed_ms": 11277.288,
+          "agent": "agent-carrier",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 14,
+          "elapsed_ms": 13816.42,
+          "agent": "agent-carrier",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 15,
+          "elapsed_ms": 14012.466,
+          "agent": "agent-engineer",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 16,
+          "elapsed_ms": 13980.596,
+          "agent": "agent-engineer",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 17,
+          "elapsed_ms": 8168.536,
+          "agent": "agent-engineer",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 18,
+          "elapsed_ms": 24047.107,
+          "agent": "agent-engineer",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 23,
+          "elapsed_ms": 9269.267,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 24,
+          "elapsed_ms": 7829.249,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "find_route",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 25,
+          "elapsed_ms": 7822.542,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "find_route",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 26,
+          "elapsed_ms": 6949.544,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 27,
+          "elapsed_ms": 7249.191,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 28,
+          "elapsed_ms": 7949.617,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 29,
+          "elapsed_ms": 6231.707,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 30,
+          "elapsed_ms": 8806.885,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 31,
+          "elapsed_ms": 6046.605,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        }
+      ],
+      "completed": true,
+      "seconds": 321.389,
+      "progress": {
+        "done": 7,
+        "total": 7
+      },
+      "metrics": {
+        "actions": 18,
+        "observations": 2,
+        "handoffs": 0
+      },
+      "model_turns": 31,
+      "verification_edges": 2,
+      "reported_tokens": 241066,
+      "fault_injected": false,
+      "interruptions": [
+        {
+          "type": "HTTPStatusError",
+          "http_status": 503
+        },
+        {
+          "type": "provider_error",
+          "provider_status": 429,
+          "after_recorded_turns": 18
+        },
+        {
+          "type": "provider_error",
+          "provider_status": 429,
+          "after_recorded_turns": 18
+        },
+        {
+          "type": "HTTPStatusError",
+          "http_status": 503
+        }
+      ],
+      "demo_url": "http://127.0.0.1:8000/?run=mission-07e7ae6f0654",
+      "model_tool_receipts": {
+        "gemini-3.5-flash": 18,
+        "gemini-3.1-flash-lite": 9
+      }
+    },
+    {
+      "scenario": "blocked-corridor",
+      "run_id": "mission-dfd88dfa1a6d",
+      "turns": [
+        {
+          "turn": 1,
+          "elapsed_ms": 5975.047,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "elapsed_ms": 6498.588,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "elapsed_ms": 7470.825,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "elapsed_ms": 7532.237,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "find_route",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 5,
+          "elapsed_ms": 10201.534,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 6,
+          "elapsed_ms": 11252.28,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 7,
+          "elapsed_ms": 6255.322,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 8,
+          "elapsed_ms": 5739.288,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 9,
+          "elapsed_ms": 7086.829,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": false,
+          "error": "The body must reach the task location first"
+        },
+        {
+          "turn": 10,
+          "elapsed_ms": 5809.608,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "find_route",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 11,
+          "elapsed_ms": 7038.477,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 12,
+          "elapsed_ms": 10335.085,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 13,
+          "elapsed_ms": 7826.241,
+          "agent": "agent-carrier",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 14,
+          "elapsed_ms": 5937.411,
+          "agent": "agent-carrier",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 15,
+          "elapsed_ms": 5652.732,
+          "agent": "agent-carrier",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "find_route",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 16,
+          "elapsed_ms": 6623.272,
+          "agent": "agent-carrier",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 17,
+          "elapsed_ms": 6365.099,
+          "agent": "agent-carrier",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 18,
+          "elapsed_ms": 5665.958,
+          "agent": "agent-carrier",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 19,
+          "elapsed_ms": 6424.7,
+          "agent": "agent-carrier",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 20,
+          "elapsed_ms": 6666.087,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "find_route",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 21,
+          "elapsed_ms": 5429.707,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 22,
+          "elapsed_ms": 6562.628,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 23,
+          "elapsed_ms": 8766.075,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 24,
+          "elapsed_ms": 6360.392,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 25,
+          "elapsed_ms": 6155.53,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "find_route",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 26,
+          "elapsed_ms": 9017.775,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "find_route",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 27,
+          "elapsed_ms": 8384.145,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 28,
+          "elapsed_ms": 7184.985,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 29,
+          "elapsed_ms": 6461.7,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 30,
+          "elapsed_ms": 9527.675,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 31,
+          "elapsed_ms": 6283.551,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 32,
+          "elapsed_ms": 7822.274,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 33,
+          "elapsed_ms": 8955.232,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        }
+      ],
+      "completed": true,
+      "demo_url": "http://127.0.0.1:8000/?run=mission-dfd88dfa1a6d",
+      "seconds": 241.104,
+      "progress": {
+        "done": 7,
+        "total": 7
+      },
+      "metrics": {
+        "actions": 19,
+        "observations": 2,
+        "handoffs": 0
+      },
+      "model_turns": 33,
+      "verification_edges": 2,
+      "reported_tokens": 300710,
+      "fault_injected": true,
+      "model_tool_receipts": {
+        "gemini-3.1-flash-lite": 33
+      }
+    },
+    {
+      "scenario": "mid-mission-body-outage",
+      "run_id": "mission-6cfc9b866988",
+      "turns": [
+        {
+          "turn": 1,
+          "elapsed_ms": 12743.973,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "elapsed_ms": 5850.742,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "elapsed_ms": 9828.642,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "elapsed_ms": 11603.043,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 5,
+          "elapsed_ms": 10199.518,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 6,
+          "elapsed_ms": 7698.278,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 7,
+          "elapsed_ms": 10543.366,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "inhabit_body",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 8,
+          "elapsed_ms": 7832.055,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 9,
+          "elapsed_ms": 6534.441,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "find_route",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 10,
+          "elapsed_ms": 7377.71,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 11,
+          "elapsed_ms": 9148.021,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 12,
+          "elapsed_ms": 5924.377,
+          "agent": "agent-carrier",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 13,
+          "elapsed_ms": 8728.335,
+          "agent": "agent-carrier",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 14,
+          "elapsed_ms": 7679.956,
+          "agent": "agent-carrier",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "find_route",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 15,
+          "elapsed_ms": 6253.481,
+          "agent": "agent-carrier",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 16,
+          "elapsed_ms": 6252.375,
+          "agent": "agent-carrier",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 17,
+          "elapsed_ms": 42658.278,
+          "agent": "agent-carrier",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 18,
+          "elapsed_ms": 7764.967,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 19,
+          "elapsed_ms": 7568.034,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "find_route",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 20,
+          "elapsed_ms": 9953.586,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 21,
+          "elapsed_ms": 8281.485,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 22,
+          "elapsed_ms": 6449.732,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": false,
+          "error": "Unknown Task: "
+        },
+        {
+          "turn": 23,
+          "elapsed_ms": 7176.937,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": false,
+          "error": "Unknown Task: "
+        },
+        {
+          "turn": 24,
+          "elapsed_ms": 5929.518,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": false,
+          "error": "This action does not match the task"
+        },
+        {
+          "turn": 25,
+          "elapsed_ms": 5977.764,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 26,
+          "elapsed_ms": 6753.644,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "find_route",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 27,
+          "elapsed_ms": 6150.213,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "find_route",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 28,
+          "elapsed_ms": 7416.857,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 29,
+          "elapsed_ms": 6993.263,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 30,
+          "elapsed_ms": 6702.481,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 31,
+          "elapsed_ms": 6941.744,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 32,
+          "elapsed_ms": 6861.562,
+          "agent": "agent-scout",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 33,
+          "elapsed_ms": 6933.523,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": false,
+          "error": "Claim this task before acting; task ownership is exclusive"
+        },
+        {
+          "turn": 34,
+          "elapsed_ms": 7481.032,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 35,
+          "elapsed_ms": 8810.064,
+          "agent": "agent-engineer",
+          "model": "gemini-3.1-flash-lite",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        }
+      ],
+      "completed": true,
+      "demo_url": "http://127.0.0.1:8000/?run=mission-6cfc9b866988",
+      "fault_after_turn": 5,
+      "seconds": 309.208,
+      "progress": {
+        "done": 7,
+        "total": 7
+      },
+      "metrics": {
+        "actions": 18,
+        "observations": 2,
+        "handoffs": 1
+      },
+      "model_turns": 35,
+      "verification_edges": 2,
+      "reported_tokens": 323735,
+      "fault_injected": true,
+      "model_tool_receipts": {
+        "gemini-3.1-flash-lite": 35
+      }
+    }
+  ],
+  "scope": "Three authored demo trials; not a statistical model benchmark",
+  "model": "gemini-3.1-flash-lite",
+  "status": "passed",
+  "resumed_at_utc": "2026-10-18T16:19:35.403210+00:00",
+  "model_changes": [
+    {
+      "from": "gemini-3.5-flash",
+      "to": "gemini-3.1-flash-lite",
+      "timestamp_utc": "2026-10-18T16:19:36.099922+00:00",
+      "reason": "Explicit operator configuration change; no automatic fallback"
+    }
+  ]
+}

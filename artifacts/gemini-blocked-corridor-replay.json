@@ -1,0 +1,2257 @@
+{
+  "run": {
+    "run_id": "mission-dfd88dfa1a6d",
+    "id": "mission-dfd88dfa1a6d",
+    "kind": "Run",
+    "name": "ORPHEUS / Recovery 07",
+    "mode": "gemini",
+    "scenario": "shared-power",
+    "status": "complete",
+    "tick": 62,
+    "created_at": "2026-10-18T16:20:44.686375+00:00",
+    "model_turns": 33
+  },
+  "nodes": [
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "mission-dfd88dfa1a6d",
+      "kind": "Run",
+      "name": "ORPHEUS / Recovery 07",
+      "mode": "gemini",
+      "scenario": "shared-power",
+      "status": "complete",
+      "tick": 62,
+      "created_at": "2026-10-18T16:20:44.686375+00:00",
+      "model_turns": 33
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "hub",
+      "kind": "Room",
+      "name": "Nexus",
+      "sector": "COMMAND",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "power",
+      "kind": "Room",
+      "name": "Power core",
+      "sector": "ENERGY",
+      "x": -8,
+      "y": 0,
+      "z": -5
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "comms",
+      "kind": "Room",
+      "name": "Array control",
+      "sector": "COMMS",
+      "x": 8,
+      "y": 0,
+      "z": -5
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "cooling",
+      "kind": "Room",
+      "name": "Life support",
+      "sector": "THERMAL",
+      "x": 8,
+      "y": 0,
+      "z": 5
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "lab",
+      "kind": "Room",
+      "name": "Research bay",
+      "sector": "SCIENCE",
+      "x": -8,
+      "y": 0,
+      "z": 5
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "stores",
+      "kind": "Room",
+      "name": "Supply dock",
+      "sector": "LOGISTICS",
+      "x": 0,
+      "y": 0,
+      "z": 10
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "airlock",
+      "kind": "Room",
+      "name": "Airlock 02",
+      "sector": "TRANSIT",
+      "x": 0,
+      "y": 0,
+      "z": -10
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "cap-scan",
+      "kind": "Capability",
+      "name": "scan"
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "cap-analyze",
+      "kind": "Capability",
+      "name": "analyze"
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "cap-repair",
+      "kind": "Capability",
+      "name": "repair"
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "cap-carry",
+      "kind": "Capability",
+      "name": "carry"
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "pip",
+      "kind": "Body",
+      "name": "PIP",
+      "role": "scout",
+      "status": "online",
+      "battery": 87,
+      "color": "#7ee4c5",
+      "room": "cooling",
+      "capabilities": [
+        "scan",
+        "analyze"
+      ],
+      "agent": "agent-scout",
+      "carrying": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "agent-scout",
+      "kind": "Agent",
+      "name": "Navigator",
+      "role": "scout"
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "bolt",
+      "kind": "Body",
+      "name": "BOLT",
+      "role": "engineer",
+      "status": "online",
+      "battery": 77,
+      "color": "#f6b66b",
+      "room": "comms",
+      "capabilities": [
+        "scan",
+        "analyze",
+        "repair"
+      ],
+      "agent": "agent-engineer",
+      "carrying": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "agent-engineer",
+      "kind": "Agent",
+      "name": "Mechanic",
+      "role": "engineer"
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "moss",
+      "kind": "Body",
+      "name": "MOSS",
+      "role": "carrier",
+      "status": "online",
+      "battery": 92,
+      "color": "#a9b6ff",
+      "room": "power",
+      "capabilities": [
+        "scan",
+        "carry"
+      ],
+      "agent": "agent-carrier",
+      "carrying": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "agent-carrier",
+      "kind": "Agent",
+      "name": "Quartermaster",
+      "role": "carrier"
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "echo",
+      "kind": "Body",
+      "name": "ECHO",
+      "role": "reserve",
+      "status": "standby",
+      "battery": 100,
+      "color": "#f2e7d1",
+      "room": "airlock",
+      "capabilities": [
+        "scan",
+        "analyze",
+        "repair",
+        "carry"
+      ],
+      "agent": null,
+      "carrying": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "bus",
+      "kind": "System",
+      "name": "Primary relay bus",
+      "status": "operational",
+      "room": "power"
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "coolant",
+      "kind": "System",
+      "name": "Cooling loop",
+      "status": "operational",
+      "room": "cooling"
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "antenna",
+      "kind": "System",
+      "name": "Communication array",
+      "status": "operational",
+      "room": "comms"
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "samples",
+      "kind": "System",
+      "name": "Research samples",
+      "status": "stable",
+      "room": "lab"
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "relay",
+      "kind": "Item",
+      "name": "Replacement relay",
+      "status": "installed",
+      "room": "power"
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "scan-cooling",
+      "kind": "Task",
+      "name": "Inspect cooling failure",
+      "action": "inspect",
+      "target": "coolant",
+      "room": "cooling",
+      "status": "done",
+      "preferred_role": "scout",
+      "owner": "agent-scout",
+      "completed_by": "agent-scout"
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "scan-comms",
+      "kind": "Task",
+      "name": "Inspect communication failure",
+      "action": "inspect",
+      "target": "antenna",
+      "room": "comms",
+      "status": "done",
+      "preferred_role": "engineer",
+      "owner": "agent-engineer",
+      "completed_by": "agent-engineer"
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "correlate",
+      "kind": "Task",
+      "name": "Find a shared cause",
+      "action": "diagnose",
+      "target": "hub",
+      "room": "hub",
+      "status": "done",
+      "preferred_role": "scout",
+      "owner": "agent-scout",
+      "completed_by": "agent-scout"
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "supply",
+      "kind": "Task",
+      "name": "Deliver a replacement relay",
+      "action": "deliver",
+      "target": "relay",
+      "room": "power",
+      "status": "done",
+      "preferred_role": "carrier",
+      "owner": "agent-carrier",
+      "completed_by": "agent-carrier"
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "repair",
+      "kind": "Task",
+      "name": "Restore the shared power bus",
+      "action": "repair",
+      "target": "bus",
+      "room": "power",
+      "status": "done",
+      "preferred_role": "engineer",
+      "owner": "agent-engineer",
+      "completed_by": "agent-engineer"
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "verify-cooling",
+      "kind": "Task",
+      "name": "Verify cooling recovered",
+      "action": "verify",
+      "target": "coolant",
+      "room": "cooling",
+      "status": "done",
+      "preferred_role": "scout",
+      "owner": "agent-scout",
+      "completed_by": "agent-scout"
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "verify-comms",
+      "kind": "Task",
+      "name": "Verify communications recovered",
+      "action": "verify",
+      "target": "antenna",
+      "room": "comms",
+      "status": "done",
+      "preferred_role": "engineer",
+      "owner": "agent-engineer",
+      "completed_by": "agent-engineer"
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "obs-antenna",
+      "kind": "Observation",
+      "name": "Communication array reading",
+      "signal": "power_loss",
+      "detail": "Undervoltage at the subsystem input. Local hardware responds normally.",
+      "observed_by": "agent-engineer",
+      "status": "verified"
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "obs-coolant",
+      "kind": "Observation",
+      "name": "Cooling loop reading",
+      "signal": "power_loss",
+      "detail": "Undervoltage at the subsystem input. Local hardware responds normally.",
+      "observed_by": "agent-scout",
+      "status": "verified"
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "hypothesis-bus",
+      "kind": "Hypothesis",
+      "name": "Shared upstream power failure",
+      "status": "supported",
+      "detail": "Two observed power-loss symptoms share an upstream bus. This is a supported diagnosis in the bounded simulator, not universal causal proof."
+    }
+  ],
+  "edges": [
+    {
+      "source": "hub",
+      "target": "power",
+      "type": "CONNECTS",
+      "blocked": true
+    },
+    {
+      "source": "hub",
+      "target": "comms",
+      "type": "CONNECTS",
+      "blocked": false
+    },
+    {
+      "source": "hub",
+      "target": "cooling",
+      "type": "CONNECTS",
+      "blocked": false
+    },
+    {
+      "source": "hub",
+      "target": "lab",
+      "type": "CONNECTS",
+      "blocked": false
+    },
+    {
+      "source": "hub",
+      "target": "stores",
+      "type": "CONNECTS",
+      "blocked": false
+    },
+    {
+      "source": "hub",
+      "target": "airlock",
+      "type": "CONNECTS",
+      "blocked": false
+    },
+    {
+      "source": "power",
+      "target": "hub",
+      "type": "CONNECTS",
+      "blocked": true
+    },
+    {
+      "source": "power",
+      "target": "airlock",
+      "type": "CONNECTS",
+      "blocked": false
+    },
+    {
+      "source": "comms",
+      "target": "hub",
+      "type": "CONNECTS",
+      "blocked": false
+    },
+    {
+      "source": "comms",
+      "target": "airlock",
+      "type": "CONNECTS",
+      "blocked": false
+    },
+    {
+      "source": "cooling",
+      "target": "hub",
+      "type": "CONNECTS",
+      "blocked": false
+    },
+    {
+      "source": "cooling",
+      "target": "stores",
+      "type": "CONNECTS",
+      "blocked": false
+    },
+    {
+      "source": "lab",
+      "target": "hub",
+      "type": "CONNECTS",
+      "blocked": false
+    },
+    {
+      "source": "lab",
+      "target": "stores",
+      "type": "CONNECTS",
+      "blocked": false
+    },
+    {
+      "source": "stores",
+      "target": "hub",
+      "type": "CONNECTS",
+      "blocked": false
+    },
+    {
+      "source": "stores",
+      "target": "cooling",
+      "type": "CONNECTS",
+      "blocked": false
+    },
+    {
+      "source": "stores",
+      "target": "lab",
+      "type": "CONNECTS",
+      "blocked": false
+    },
+    {
+      "source": "airlock",
+      "target": "hub",
+      "type": "CONNECTS",
+      "blocked": false
+    },
+    {
+      "source": "airlock",
+      "target": "power",
+      "type": "CONNECTS",
+      "blocked": false
+    },
+    {
+      "source": "airlock",
+      "target": "comms",
+      "type": "CONNECTS",
+      "blocked": false
+    },
+    {
+      "source": "pip",
+      "target": "cooling",
+      "type": "LOCATED_IN"
+    },
+    {
+      "source": "pip",
+      "target": "cap-scan",
+      "type": "HAS_CAPABILITY"
+    },
+    {
+      "source": "pip",
+      "target": "cap-analyze",
+      "type": "HAS_CAPABILITY"
+    },
+    {
+      "source": "agent-scout",
+      "target": "pip",
+      "type": "EMBODIES"
+    },
+    {
+      "source": "bolt",
+      "target": "comms",
+      "type": "LOCATED_IN"
+    },
+    {
+      "source": "bolt",
+      "target": "cap-scan",
+      "type": "HAS_CAPABILITY"
+    },
+    {
+      "source": "bolt",
+      "target": "cap-analyze",
+      "type": "HAS_CAPABILITY"
+    },
+    {
+      "source": "bolt",
+      "target": "cap-repair",
+      "type": "HAS_CAPABILITY"
+    },
+    {
+      "source": "agent-engineer",
+      "target": "bolt",
+      "type": "EMBODIES"
+    },
+    {
+      "source": "moss",
+      "target": "power",
+      "type": "LOCATED_IN"
+    },
+    {
+      "source": "moss",
+      "target": "cap-scan",
+      "type": "HAS_CAPABILITY"
+    },
+    {
+      "source": "moss",
+      "target": "cap-carry",
+      "type": "HAS_CAPABILITY"
+    },
+    {
+      "source": "agent-carrier",
+      "target": "moss",
+      "type": "EMBODIES"
+    },
+    {
+      "source": "echo",
+      "target": "airlock",
+      "type": "LOCATED_IN"
+    },
+    {
+      "source": "echo",
+      "target": "cap-scan",
+      "type": "HAS_CAPABILITY"
+    },
+    {
+      "source": "echo",
+      "target": "cap-analyze",
+      "type": "HAS_CAPABILITY"
+    },
+    {
+      "source": "echo",
+      "target": "cap-repair",
+      "type": "HAS_CAPABILITY"
+    },
+    {
+      "source": "echo",
+      "target": "cap-carry",
+      "type": "HAS_CAPABILITY"
+    },
+    {
+      "source": "bus",
+      "target": "power",
+      "type": "LOCATED_IN"
+    },
+    {
+      "source": "coolant",
+      "target": "cooling",
+      "type": "LOCATED_IN"
+    },
+    {
+      "source": "coolant",
+      "target": "agent-scout",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "coolant",
+      "target": "bus",
+      "type": "DEPENDS_ON"
+    },
+    {
+      "source": "antenna",
+      "target": "comms",
+      "type": "LOCATED_IN"
+    },
+    {
+      "source": "antenna",
+      "target": "agent-engineer",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "antenna",
+      "target": "bus",
+      "type": "DEPENDS_ON"
+    },
+    {
+      "source": "samples",
+      "target": "lab",
+      "type": "LOCATED_IN"
+    },
+    {
+      "source": "samples",
+      "target": "coolant",
+      "type": "DEPENDS_ON"
+    },
+    {
+      "source": "relay",
+      "target": "power",
+      "type": "LOCATED_IN"
+    },
+    {
+      "source": "scan-cooling",
+      "target": "cap-scan",
+      "type": "REQUIRES"
+    },
+    {
+      "source": "scan-cooling",
+      "target": "agent-scout",
+      "type": "ASSIGNED_TO"
+    },
+    {
+      "source": "scan-comms",
+      "target": "cap-scan",
+      "type": "REQUIRES"
+    },
+    {
+      "source": "scan-comms",
+      "target": "agent-engineer",
+      "type": "ASSIGNED_TO"
+    },
+    {
+      "source": "correlate",
+      "target": "cap-analyze",
+      "type": "REQUIRES"
+    },
+    {
+      "source": "correlate",
+      "target": "agent-scout",
+      "type": "ASSIGNED_TO"
+    },
+    {
+      "source": "correlate",
+      "target": "scan-cooling",
+      "type": "DEPENDS_ON"
+    },
+    {
+      "source": "correlate",
+      "target": "scan-comms",
+      "type": "DEPENDS_ON"
+    },
+    {
+      "source": "supply",
+      "target": "cap-carry",
+      "type": "REQUIRES"
+    },
+    {
+      "source": "supply",
+      "target": "agent-carrier",
+      "type": "ASSIGNED_TO"
+    },
+    {
+      "source": "supply",
+      "target": "correlate",
+      "type": "DEPENDS_ON"
+    },
+    {
+      "source": "repair",
+      "target": "cap-repair",
+      "type": "REQUIRES"
+    },
+    {
+      "source": "repair",
+      "target": "agent-engineer",
+      "type": "ASSIGNED_TO"
+    },
+    {
+      "source": "repair",
+      "target": "supply",
+      "type": "DEPENDS_ON"
+    },
+    {
+      "source": "verify-cooling",
+      "target": "cap-scan",
+      "type": "REQUIRES"
+    },
+    {
+      "source": "verify-cooling",
+      "target": "agent-scout",
+      "type": "ASSIGNED_TO"
+    },
+    {
+      "source": "verify-cooling",
+      "target": "repair",
+      "type": "DEPENDS_ON"
+    },
+    {
+      "source": "verify-comms",
+      "target": "cap-scan",
+      "type": "REQUIRES"
+    },
+    {
+      "source": "verify-comms",
+      "target": "agent-engineer",
+      "type": "ASSIGNED_TO"
+    },
+    {
+      "source": "verify-comms",
+      "target": "repair",
+      "type": "DEPENDS_ON"
+    },
+    {
+      "source": "obs-antenna",
+      "target": "agent-engineer",
+      "type": "OBSERVED_BY"
+    },
+    {
+      "source": "obs-antenna",
+      "target": "antenna",
+      "type": "ABOUT"
+    },
+    {
+      "source": "obs-coolant",
+      "target": "agent-scout",
+      "type": "OBSERVED_BY"
+    },
+    {
+      "source": "obs-coolant",
+      "target": "coolant",
+      "type": "ABOUT"
+    },
+    {
+      "source": "hypothesis-bus",
+      "target": "bus",
+      "type": "ABOUT"
+    },
+    {
+      "source": "hypothesis-bus",
+      "target": "obs-antenna",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "source": "hypothesis-bus",
+      "target": "obs-coolant",
+      "type": "SUPPORTED_BY"
+    }
+  ],
+  "events": [
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00001",
+      "kind": "Event",
+      "name": "Two systems offline. One crew.",
+      "category": "mission",
+      "actor": "MISSION CONTROL",
+      "detail": "Cooling and communications are degraded. Investigate, coordinate a repair, and verify recovery. All station data is synthetic.",
+      "tick": 1,
+      "timestamp": "2026-10-18T16:20:44.916553+00:00",
+      "query": "",
+      "data": {},
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00002",
+      "kind": "Event",
+      "name": "Corridor sealed",
+      "category": "fault",
+      "actor": "MISSION CONTROL",
+      "detail": "hub / power. Movement queries now use the current corridor graph.",
+      "tick": 2,
+      "timestamp": "2026-10-18T16:20:44.964463+00:00",
+      "query": "route",
+      "data": {},
+      "evidence": [
+        "hub",
+        "power"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00003",
+      "kind": "Event",
+      "name": "Task reserved",
+      "category": "coordination",
+      "actor": "agent-engineer",
+      "detail": "Inspect communication failure. Capability and prerequisite paths checked in FalkorDB.",
+      "tick": 3,
+      "timestamp": "2026-10-18T16:20:50.653429+00:00",
+      "query": "ready_tasks,claim",
+      "data": {},
+      "evidence": [
+        "bolt",
+        "scan-comms"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00004",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 claim_task",
+      "category": "tool",
+      "actor": "agent-engineer",
+      "detail": "{\"arguments\": {\"task_id\": \"scan-comms\"}, \"ok\": true}",
+      "tick": 4,
+      "timestamp": "2026-10-18T16:20:50.965443+00:00",
+      "query": "",
+      "data": {
+        "tool": "claim_task",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "task_id": "scan-comms"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 4628,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00005",
+      "kind": "Event",
+      "name": "Task reserved",
+      "category": "coordination",
+      "actor": "agent-scout",
+      "detail": "Inspect cooling failure. Capability and prerequisite paths checked in FalkorDB.",
+      "tick": 5,
+      "timestamp": "2026-10-18T16:20:57.189156+00:00",
+      "query": "ready_tasks,claim",
+      "data": {},
+      "evidence": [
+        "pip",
+        "scan-cooling"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00006",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 claim_task",
+      "category": "tool",
+      "actor": "agent-scout",
+      "detail": "{\"arguments\": {\"task_id\": \"scan-cooling\"}, \"ok\": true}",
+      "tick": 6,
+      "timestamp": "2026-10-18T16:20:57.485904+00:00",
+      "query": "",
+      "data": {
+        "tool": "claim_task",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "task_id": "scan-cooling"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 4583,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00007",
+      "kind": "Event",
+      "name": "Moving through the station",
+      "category": "action",
+      "actor": "agent-engineer",
+      "detail": "BOLT: hub \u2192 comms.",
+      "tick": 7,
+      "timestamp": "2026-10-18T16:21:04.499243+00:00",
+      "query": "route",
+      "data": {
+        "action": "move",
+        "body": "bolt",
+        "from": "hub",
+        "task": "",
+        "reason": "Moving to comms to inspect the antenna.",
+        "to": "comms"
+      },
+      "evidence": [
+        "hub",
+        "comms",
+        "bolt",
+        "agent-engineer"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00008",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 execute_action",
+      "category": "tool",
+      "actor": "agent-engineer",
+      "detail": "{\"arguments\": {\"action\": \"move\", \"reason\": \"Moving to comms to inspect the antenna.\", \"target\": \"comms\"}, \"ok\": true}",
+      "tick": 8,
+      "timestamp": "2026-10-18T16:21:04.971767+00:00",
+      "query": "",
+      "data": {
+        "tool": "execute_action",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "action": "move",
+          "reason": "Moving to comms to inspect the antenna.",
+          "target": "comms"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 8630,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00009",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 find_route",
+      "category": "tool",
+      "actor": "agent-scout",
+      "detail": "{\"arguments\": {\"destination\": \"cooling\"}, \"ok\": true}",
+      "tick": 9,
+      "timestamp": "2026-10-18T16:21:12.525026+00:00",
+      "query": "route",
+      "data": {
+        "tool": "find_route",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "destination": "cooling"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 8562,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00010",
+      "kind": "Event",
+      "name": "New evidence shared with the crew",
+      "category": "action",
+      "actor": "agent-engineer",
+      "detail": "Communication array: Undervoltage at the subsystem input. Local hardware responds normally.",
+      "tick": 10,
+      "timestamp": "2026-10-18T16:21:21.805338+00:00",
+      "query": "",
+      "data": {
+        "action": "inspect",
+        "body": "bolt",
+        "from": "comms",
+        "task": "scan-comms",
+        "reason": "Inspecting the antenna to complete the assigned task."
+      },
+      "evidence": [
+        "bolt",
+        "agent-engineer",
+        "antenna",
+        "scan-comms",
+        "obs-antenna"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00011",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 execute_action",
+      "category": "tool",
+      "actor": "agent-engineer",
+      "detail": "{\"arguments\": {\"task_id\": \"scan-comms\", \"action\": \"inspect\", \"reason\": \"Inspecting the antenna to complete the assigned task.\", \"target\": \"antenna\"}, \"ok\": true}",
+      "tick": 11,
+      "timestamp": "2026-10-18T16:21:22.753395+00:00",
+      "query": "",
+      "data": {
+        "tool": "execute_action",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "task_id": "scan-comms",
+          "action": "inspect",
+          "reason": "Inspecting the antenna to complete the assigned task.",
+          "target": "antenna"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 8794,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00012",
+      "kind": "Event",
+      "name": "Moving through the station",
+      "category": "action",
+      "actor": "agent-scout",
+      "detail": "PIP: hub \u2192 cooling.",
+      "tick": 12,
+      "timestamp": "2026-10-18T16:21:33.525840+00:00",
+      "query": "route",
+      "data": {
+        "action": "move",
+        "body": "pip",
+        "from": "hub",
+        "task": "",
+        "reason": "Moving to cooling to inspect the coolant system as required by my active task.",
+        "to": "cooling"
+      },
+      "evidence": [
+        "hub",
+        "cooling",
+        "pip",
+        "agent-scout"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00013",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 execute_action",
+      "category": "tool",
+      "actor": "agent-scout",
+      "detail": "{\"arguments\": {\"action\": \"move\", \"reason\": \"Moving to cooling to inspect the coolant system as required by my active task.\", \"target\": \"cooling\"}, \"ok\": true}",
+      "tick": 13,
+      "timestamp": "2026-10-18T16:21:34.201460+00:00",
+      "query": "",
+      "data": {
+        "tool": "execute_action",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "action": "move",
+          "reason": "Moving to cooling to inspect the coolant system as required by my active task.",
+          "target": "cooling"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 8773,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00014",
+      "kind": "Event",
+      "name": "New evidence shared with the crew",
+      "category": "action",
+      "actor": "agent-scout",
+      "detail": "Cooling loop: Undervoltage at the subsystem input. Local hardware responds normally.",
+      "tick": 14,
+      "timestamp": "2026-10-18T16:21:40.053055+00:00",
+      "query": "",
+      "data": {
+        "action": "inspect",
+        "body": "pip",
+        "from": "cooling",
+        "task": "scan-cooling",
+        "reason": "Inspecting the cooling loop to complete the active task."
+      },
+      "evidence": [
+        "pip",
+        "agent-scout",
+        "coolant",
+        "scan-cooling",
+        "obs-coolant"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00015",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 execute_action",
+      "category": "tool",
+      "actor": "agent-scout",
+      "detail": "{\"arguments\": {\"task_id\": \"scan-cooling\", \"action\": \"inspect\", \"reason\": \"Inspecting the cooling loop to complete the active task.\"}, \"ok\": true}",
+      "tick": 15,
+      "timestamp": "2026-10-18T16:21:40.482482+00:00",
+      "query": "",
+      "data": {
+        "tool": "execute_action",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "task_id": "scan-cooling",
+          "action": "inspect",
+          "reason": "Inspecting the cooling loop to complete the active task."
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9073,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00016",
+      "kind": "Event",
+      "name": "Task reserved",
+      "category": "coordination",
+      "actor": "agent-scout",
+      "detail": "Find a shared cause. Capability and prerequisite paths checked in FalkorDB.",
+      "tick": 16,
+      "timestamp": "2026-10-18T16:21:45.879966+00:00",
+      "query": "ready_tasks,claim",
+      "data": {},
+      "evidence": [
+        "pip",
+        "correlate"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00017",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 claim_task",
+      "category": "tool",
+      "actor": "agent-scout",
+      "detail": "{\"arguments\": {\"task_id\": \"correlate\"}, \"ok\": true}",
+      "tick": 17,
+      "timestamp": "2026-10-18T16:21:46.265066+00:00",
+      "query": "",
+      "data": {
+        "tool": "claim_task",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "task_id": "correlate"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9193,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00018",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 execute_action",
+      "category": "tool",
+      "actor": "agent-scout",
+      "detail": "{\"arguments\": {\"target\": \"bus\", \"reason\": \"Both cooling and communication subsystems show undervoltage, indicating a shared failure in the primary relay bus.\", \"action\": \"diagnose\", \"task_id\": \"correlate\"}, \"ok\": false}",
+      "tick": 18,
+      "timestamp": "2026-10-18T16:21:53.373834+00:00",
+      "query": "",
+      "data": {
+        "tool": "execute_action",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "target": "bus",
+          "reason": "Both cooling and communication subsystems show undervoltage, indicating a shared failure in the primary relay bus.",
+          "action": "diagnose",
+          "task_id": "correlate"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9246,
+        "result_summary": "The body must reach the task location first"
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00019",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 find_route",
+      "category": "tool",
+      "actor": "agent-scout",
+      "detail": "{\"arguments\": {\"destination\": \"hub\"}, \"ok\": true}",
+      "tick": 19,
+      "timestamp": "2026-10-18T16:21:59.227039+00:00",
+      "query": "route",
+      "data": {
+        "tool": "find_route",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "destination": "hub"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9293,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00020",
+      "kind": "Event",
+      "name": "Moving through the station",
+      "category": "action",
+      "actor": "agent-scout",
+      "detail": "PIP: cooling \u2192 hub.",
+      "tick": 20,
+      "timestamp": "2026-10-18T16:22:05.819745+00:00",
+      "query": "route",
+      "data": {
+        "action": "move",
+        "body": "pip",
+        "from": "cooling",
+        "task": "",
+        "reason": "Moving to hub to diagnose the shared cause of the power failures.",
+        "to": "hub"
+      },
+      "evidence": [
+        "hub",
+        "cooling",
+        "pip",
+        "agent-scout"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00021",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 execute_action",
+      "category": "tool",
+      "actor": "agent-scout",
+      "detail": "{\"arguments\": {\"action\": \"move\", \"reason\": \"Moving to hub to diagnose the shared cause of the power failures.\", \"target\": \"hub\"}, \"ok\": true}",
+      "tick": 21,
+      "timestamp": "2026-10-18T16:22:06.285076+00:00",
+      "query": "",
+      "data": {
+        "tool": "execute_action",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "action": "move",
+          "reason": "Moving to hub to diagnose the shared cause of the power failures.",
+          "target": "hub"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9275,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00022",
+      "kind": "Event",
+      "name": "Two failures. One shared dependency.",
+      "category": "action",
+      "actor": "agent-scout",
+      "detail": "The observed systems antenna, coolant both depend on bus. A single relay repair can address both symptoms.",
+      "tick": 22,
+      "timestamp": "2026-10-18T16:22:16.151716+00:00",
+      "query": "shared_cause",
+      "data": {
+        "action": "diagnose",
+        "body": "pip",
+        "from": "hub",
+        "task": "correlate",
+        "reason": "Diagnosing the shared cause of the power failures based on the observed undervoltage in both cooling and communications.",
+        "systems": [
+          "antenna",
+          "coolant"
+        ]
+      },
+      "evidence": [
+        "pip",
+        "agent-scout",
+        "bus",
+        "correlate",
+        "obs-antenna",
+        "obs-coolant",
+        "hypothesis-bus"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00023",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 execute_action",
+      "category": "tool",
+      "actor": "agent-scout",
+      "detail": "{\"arguments\": {\"action\": \"diagnose\", \"task_id\": \"correlate\", \"target\": \"bus\", \"reason\": \"Diagnosing the shared cause of the power failures based on the observed undervoltage in both cooling and communications.\"}, \"ok\": true}",
+      "tick": 23,
+      "timestamp": "2026-10-18T16:22:16.631731+00:00",
+      "query": "",
+      "data": {
+        "tool": "execute_action",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "action": "diagnose",
+          "task_id": "correlate",
+          "target": "bus",
+          "reason": "Diagnosing the shared cause of the power failures based on the observed undervoltage in both cooling and communications."
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9454,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00024",
+      "kind": "Event",
+      "name": "Task reserved",
+      "category": "coordination",
+      "actor": "agent-carrier",
+      "detail": "Deliver a replacement relay. Capability and prerequisite paths checked in FalkorDB.",
+      "tick": 24,
+      "timestamp": "2026-10-18T16:22:24.063716+00:00",
+      "query": "ready_tasks,claim",
+      "data": {},
+      "evidence": [
+        "moss",
+        "supply"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00025",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 claim_task",
+      "category": "tool",
+      "actor": "agent-carrier",
+      "detail": "{\"arguments\": {\"task_id\": \"supply\"}, \"ok\": true}",
+      "tick": 25,
+      "timestamp": "2026-10-18T16:22:24.525620+00:00",
+      "query": "",
+      "data": {
+        "tool": "claim_task",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "task_id": "supply"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 5097,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00026",
+      "kind": "Event",
+      "name": "Replacement relay secured",
+      "category": "action",
+      "actor": "agent-carrier",
+      "detail": "MOSS picked up the relay at stores.",
+      "tick": 26,
+      "timestamp": "2026-10-18T16:22:30.017383+00:00",
+      "query": "",
+      "data": {
+        "action": "pick_up",
+        "body": "moss",
+        "from": "stores",
+        "task": "supply",
+        "reason": "Picking up the replacement relay to deliver it to the power core."
+      },
+      "evidence": [
+        "moss",
+        "agent-carrier",
+        "relay",
+        "supply"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00027",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 execute_action",
+      "category": "tool",
+      "actor": "agent-carrier",
+      "detail": "{\"arguments\": {\"task_id\": \"supply\", \"action\": \"pick_up\", \"reason\": \"Picking up the replacement relay to deliver it to the power core.\", \"target\": \"relay\"}, \"ok\": true}",
+      "tick": 27,
+      "timestamp": "2026-10-18T16:22:30.493145+00:00",
+      "query": "",
+      "data": {
+        "tool": "execute_action",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "task_id": "supply",
+          "action": "pick_up",
+          "reason": "Picking up the replacement relay to deliver it to the power core.",
+          "target": "relay"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9618,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00028",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 find_route",
+      "category": "tool",
+      "actor": "agent-carrier",
+      "detail": "{\"arguments\": {\"destination\": \"power\"}, \"ok\": true}",
+      "tick": 28,
+      "timestamp": "2026-10-18T16:22:36.180672+00:00",
+      "query": "route",
+      "data": {
+        "tool": "find_route",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "destination": "power"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9788,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00029",
+      "kind": "Event",
+      "name": "Moving through the station",
+      "category": "action",
+      "actor": "agent-carrier",
+      "detail": "MOSS: stores \u2192 hub.",
+      "tick": 29,
+      "timestamp": "2026-10-18T16:22:42.348120+00:00",
+      "query": "route",
+      "data": {
+        "action": "move",
+        "body": "moss",
+        "from": "stores",
+        "task": "",
+        "reason": "Moving to hub to reach the airlock and then the power core.",
+        "to": "hub"
+      },
+      "evidence": [
+        "hub",
+        "stores",
+        "moss",
+        "agent-carrier"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00030",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 execute_action",
+      "category": "tool",
+      "actor": "agent-carrier",
+      "detail": "{\"arguments\": {\"action\": \"move\", \"reason\": \"Moving to hub to reach the airlock and then the power core.\", \"target\": \"hub\"}, \"ok\": true}",
+      "tick": 30,
+      "timestamp": "2026-10-18T16:22:42.845429+00:00",
+      "query": "",
+      "data": {
+        "tool": "execute_action",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "action": "move",
+          "reason": "Moving to hub to reach the airlock and then the power core.",
+          "target": "hub"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9653,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00031",
+      "kind": "Event",
+      "name": "Moving through the station",
+      "category": "action",
+      "actor": "agent-carrier",
+      "detail": "MOSS: hub \u2192 airlock.",
+      "tick": 31,
+      "timestamp": "2026-10-18T16:22:48.856044+00:00",
+      "query": "route",
+      "data": {
+        "action": "move",
+        "body": "moss",
+        "from": "hub",
+        "task": "",
+        "reason": "Moving to airlock to reach the power core.",
+        "to": "airlock"
+      },
+      "evidence": [
+        "hub",
+        "airlock",
+        "moss",
+        "agent-carrier"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00032",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 execute_action",
+      "category": "tool",
+      "actor": "agent-carrier",
+      "detail": "{\"arguments\": {\"action\": \"move\", \"target\": \"airlock\", \"reason\": \"Moving to airlock to reach the power core.\"}, \"ok\": true}",
+      "tick": 32,
+      "timestamp": "2026-10-18T16:22:49.246984+00:00",
+      "query": "",
+      "data": {
+        "tool": "execute_action",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "action": "move",
+          "target": "airlock",
+          "reason": "Moving to airlock to reach the power core."
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9801,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00033",
+      "kind": "Event",
+      "name": "Moving through the station",
+      "category": "action",
+      "actor": "agent-carrier",
+      "detail": "MOSS: airlock \u2192 power.",
+      "tick": 33,
+      "timestamp": "2026-10-18T16:22:54.668720+00:00",
+      "query": "route",
+      "data": {
+        "action": "move",
+        "body": "moss",
+        "from": "airlock",
+        "task": "",
+        "reason": "Moving to power core to deliver the relay.",
+        "to": "power"
+      },
+      "evidence": [
+        "power",
+        "airlock",
+        "moss",
+        "agent-carrier"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00034",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 execute_action",
+      "category": "tool",
+      "actor": "agent-carrier",
+      "detail": "{\"arguments\": {\"action\": \"move\", \"reason\": \"Moving to power core to deliver the relay.\", \"target\": \"power\"}, \"ok\": true}",
+      "tick": 34,
+      "timestamp": "2026-10-18T16:22:54.945240+00:00",
+      "query": "",
+      "data": {
+        "tool": "execute_action",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "action": "move",
+          "reason": "Moving to power core to deliver the relay.",
+          "target": "power"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9797,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00035",
+      "kind": "Event",
+      "name": "Repair prerequisite satisfied",
+      "category": "action",
+      "actor": "agent-carrier",
+      "detail": "The replacement relay is physically at the power core. The engineering task is now eligible.",
+      "tick": 35,
+      "timestamp": "2026-10-18T16:23:00.954423+00:00",
+      "query": "",
+      "data": {
+        "action": "drop",
+        "body": "moss",
+        "from": "power",
+        "task": "supply",
+        "reason": "Delivering the replacement relay to the power core."
+      },
+      "evidence": [
+        "moss",
+        "agent-carrier",
+        "relay",
+        "supply"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00036",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 execute_action",
+      "category": "tool",
+      "actor": "agent-carrier",
+      "detail": "{\"arguments\": {\"target\": \"power\", \"action\": \"drop\", \"task_id\": \"supply\", \"reason\": \"Delivering the replacement relay to the power core.\"}, \"ok\": true}",
+      "tick": 36,
+      "timestamp": "2026-10-18T16:23:01.405867+00:00",
+      "query": "",
+      "data": {
+        "tool": "execute_action",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "target": "power",
+          "action": "drop",
+          "task_id": "supply",
+          "reason": "Delivering the replacement relay to the power core."
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9804,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00037",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 find_route",
+      "category": "tool",
+      "actor": "agent-engineer",
+      "detail": "{\"arguments\": {\"destination\": \"power\"}, \"ok\": true}",
+      "tick": 37,
+      "timestamp": "2026-10-18T16:23:08.097498+00:00",
+      "query": "route",
+      "data": {
+        "tool": "find_route",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "destination": "power"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9299,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00038",
+      "kind": "Event",
+      "name": "Moving through the station",
+      "category": "action",
+      "actor": "agent-engineer",
+      "detail": "BOLT: comms \u2192 airlock.",
+      "tick": 38,
+      "timestamp": "2026-10-18T16:23:13.165797+00:00",
+      "query": "route",
+      "data": {
+        "action": "move",
+        "body": "bolt",
+        "from": "comms",
+        "task": "",
+        "reason": "Moving to airlock to reach the power core.",
+        "to": "airlock"
+      },
+      "evidence": [
+        "comms",
+        "airlock",
+        "bolt",
+        "agent-engineer"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00039",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 execute_action",
+      "category": "tool",
+      "actor": "agent-engineer",
+      "detail": "{\"arguments\": {\"reason\": \"Moving to airlock to reach the power core.\", \"target\": \"airlock\", \"action\": \"move\"}, \"ok\": true}",
+      "tick": 39,
+      "timestamp": "2026-10-18T16:23:13.554257+00:00",
+      "query": "",
+      "data": {
+        "tool": "execute_action",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "reason": "Moving to airlock to reach the power core.",
+          "target": "airlock",
+          "action": "move"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9669,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00040",
+      "kind": "Event",
+      "name": "Moving through the station",
+      "category": "action",
+      "actor": "agent-engineer",
+      "detail": "BOLT: airlock \u2192 power.",
+      "tick": 40,
+      "timestamp": "2026-10-18T16:23:19.610626+00:00",
+      "query": "route",
+      "data": {
+        "action": "move",
+        "body": "bolt",
+        "from": "airlock",
+        "task": "",
+        "reason": "Moving to power core to perform repair.",
+        "to": "power"
+      },
+      "evidence": [
+        "power",
+        "airlock",
+        "bolt",
+        "agent-engineer"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00041",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 execute_action",
+      "category": "tool",
+      "actor": "agent-engineer",
+      "detail": "{\"arguments\": {\"action\": \"move\", \"reason\": \"Moving to power core to perform repair.\", \"target\": \"power\"}, \"ok\": true}",
+      "tick": 41,
+      "timestamp": "2026-10-18T16:23:20.137208+00:00",
+      "query": "",
+      "data": {
+        "tool": "execute_action",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "action": "move",
+          "reason": "Moving to power core to perform repair.",
+          "target": "power"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9817,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00042",
+      "kind": "Event",
+      "name": "Task reserved",
+      "category": "coordination",
+      "actor": "agent-engineer",
+      "detail": "Restore the shared power bus. Capability and prerequisite paths checked in FalkorDB.",
+      "tick": 42,
+      "timestamp": "2026-10-18T16:23:28.497971+00:00",
+      "query": "ready_tasks,claim",
+      "data": {},
+      "evidence": [
+        "bolt",
+        "repair"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00043",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 claim_task",
+      "category": "tool",
+      "actor": "agent-engineer",
+      "detail": "{\"arguments\": {\"task_id\": \"repair\"}, \"ok\": true}",
+      "tick": 43,
+      "timestamp": "2026-10-18T16:23:28.928860+00:00",
+      "query": "",
+      "data": {
+        "tool": "claim_task",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "task_id": "repair"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9790,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00044",
+      "kind": "Event",
+      "name": "Shared power restored",
+      "category": "action",
+      "actor": "agent-engineer",
+      "detail": "Relay replaced. The dependency traversal identifies cooling, communications and the research samples downstream. Verification tasks remain required.",
+      "tick": 44,
+      "timestamp": "2026-10-18T16:23:35.054065+00:00",
+      "query": "impact",
+      "data": {
+        "action": "repair",
+        "body": "bolt",
+        "from": "power",
+        "task": "repair",
+        "reason": "Repairing the primary relay bus to restore power to the station subsystems."
+      },
+      "evidence": [
+        "bolt",
+        "agent-engineer",
+        "bus",
+        "coolant",
+        "antenna",
+        "samples",
+        "relay",
+        "repair"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00045",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 execute_action",
+      "category": "tool",
+      "actor": "agent-engineer",
+      "detail": "{\"arguments\": {\"task_id\": \"repair\", \"target\": \"bus\", \"action\": \"repair\", \"reason\": \"Repairing the primary relay bus to restore power to the station subsystems.\"}, \"ok\": true}",
+      "tick": 45,
+      "timestamp": "2026-10-18T16:23:35.478914+00:00",
+      "query": "",
+      "data": {
+        "tool": "execute_action",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "task_id": "repair",
+          "target": "bus",
+          "action": "repair",
+          "reason": "Repairing the primary relay bus to restore power to the station subsystems."
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9703,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00046",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 find_route",
+      "category": "tool",
+      "actor": "agent-scout",
+      "detail": "{\"arguments\": {\"destination\": \"cooling\"}, \"ok\": true}",
+      "tick": 46,
+      "timestamp": "2026-10-18T16:23:41.677886+00:00",
+      "query": "route",
+      "data": {
+        "tool": "find_route",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "destination": "cooling"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9770,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00047",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 find_route",
+      "category": "tool",
+      "actor": "agent-engineer",
+      "detail": "{\"arguments\": {\"destination\": \"comms\"}, \"ok\": true}",
+      "tick": 47,
+      "timestamp": "2026-10-18T16:23:50.723425+00:00",
+      "query": "route",
+      "data": {
+        "tool": "find_route",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "destination": "comms"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9965,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00048",
+      "kind": "Event",
+      "name": "Moving through the station",
+      "category": "action",
+      "actor": "agent-scout",
+      "detail": "PIP: hub \u2192 cooling.",
+      "tick": 48,
+      "timestamp": "2026-10-18T16:23:58.733471+00:00",
+      "query": "route",
+      "data": {
+        "action": "move",
+        "body": "pip",
+        "from": "hub",
+        "task": "",
+        "reason": "Moving to cooling to verify the coolant system.",
+        "to": "cooling"
+      },
+      "evidence": [
+        "hub",
+        "cooling",
+        "pip",
+        "agent-scout"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00049",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 execute_action",
+      "category": "tool",
+      "actor": "agent-scout",
+      "detail": "{\"arguments\": {\"target\": \"cooling\", \"action\": \"move\", \"reason\": \"Moving to cooling to verify the coolant system.\"}, \"ok\": true}",
+      "tick": 49,
+      "timestamp": "2026-10-18T16:23:59.169354+00:00",
+      "query": "",
+      "data": {
+        "tool": "execute_action",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "target": "cooling",
+          "action": "move",
+          "reason": "Moving to cooling to verify the coolant system."
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9875,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00050",
+      "kind": "Event",
+      "name": "Moving through the station",
+      "category": "action",
+      "actor": "agent-engineer",
+      "detail": "BOLT: power \u2192 airlock.",
+      "tick": 50,
+      "timestamp": "2026-10-18T16:24:06.014214+00:00",
+      "query": "route",
+      "data": {
+        "action": "move",
+        "body": "bolt",
+        "from": "power",
+        "task": "",
+        "reason": "Moving to comms to verify the communication array.",
+        "to": "airlock"
+      },
+      "evidence": [
+        "power",
+        "airlock",
+        "bolt",
+        "agent-engineer"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00051",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 execute_action",
+      "category": "tool",
+      "actor": "agent-engineer",
+      "detail": "{\"arguments\": {\"action\": \"move\", \"reason\": \"Moving to comms to verify the communication array.\", \"target\": \"airlock\"}, \"ok\": true}",
+      "tick": 51,
+      "timestamp": "2026-10-18T16:24:06.377862+00:00",
+      "query": "",
+      "data": {
+        "tool": "execute_action",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "action": "move",
+          "reason": "Moving to comms to verify the communication array.",
+          "target": "airlock"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9890,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00052",
+      "kind": "Event",
+      "name": "Task reserved",
+      "category": "coordination",
+      "actor": "agent-scout",
+      "detail": "Verify cooling recovered. Capability and prerequisite paths checked in FalkorDB.",
+      "tick": 52,
+      "timestamp": "2026-10-18T16:24:12.540161+00:00",
+      "query": "ready_tasks,claim",
+      "data": {},
+      "evidence": [
+        "pip",
+        "verify-cooling"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00053",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 claim_task",
+      "category": "tool",
+      "actor": "agent-scout",
+      "detail": "{\"arguments\": {\"task_id\": \"verify-cooling\"}, \"ok\": true}",
+      "tick": 53,
+      "timestamp": "2026-10-18T16:24:12.949501+00:00",
+      "query": "",
+      "data": {
+        "tool": "claim_task",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "task_id": "verify-cooling"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 10011,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00054",
+      "kind": "Event",
+      "name": "Moving through the station",
+      "category": "action",
+      "actor": "agent-engineer",
+      "detail": "BOLT: airlock \u2192 comms.",
+      "tick": 54,
+      "timestamp": "2026-10-18T16:24:22.098635+00:00",
+      "query": "route",
+      "data": {
+        "action": "move",
+        "body": "bolt",
+        "from": "airlock",
+        "task": "",
+        "reason": "Moving to comms to verify the communication array.",
+        "to": "comms"
+      },
+      "evidence": [
+        "comms",
+        "airlock",
+        "bolt",
+        "agent-engineer"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00055",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 execute_action",
+      "category": "tool",
+      "actor": "agent-engineer",
+      "detail": "{\"arguments\": {\"reason\": \"Moving to comms to verify the communication array.\", \"target\": \"comms\", \"action\": \"move\"}, \"ok\": true}",
+      "tick": 55,
+      "timestamp": "2026-10-18T16:24:22.509925+00:00",
+      "query": "",
+      "data": {
+        "tool": "execute_action",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "reason": "Moving to comms to verify the communication array.",
+          "target": "comms",
+          "action": "move"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 10001,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00056",
+      "kind": "Event",
+      "name": "Recovery independently verified",
+      "category": "action",
+      "actor": "agent-scout",
+      "detail": "Cooling loop is operational. Verification was performed at the subsystem after repair.",
+      "tick": 56,
+      "timestamp": "2026-10-18T16:24:28.463069+00:00",
+      "query": "",
+      "data": {
+        "action": "verify",
+        "body": "pip",
+        "from": "cooling",
+        "task": "verify-cooling",
+        "reason": "Verifying cooling loop status after repair."
+      },
+      "evidence": [
+        "pip",
+        "agent-scout",
+        "coolant",
+        "verify-cooling"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00057",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 execute_action",
+      "category": "tool",
+      "actor": "agent-scout",
+      "detail": "{\"arguments\": {\"reason\": \"Verifying cooling loop status after repair.\", \"action\": \"verify\", \"task_id\": \"verify-cooling\", \"target\": \"coolant\"}, \"ok\": true}",
+      "tick": 57,
+      "timestamp": "2026-10-18T16:24:28.827451+00:00",
+      "query": "",
+      "data": {
+        "tool": "execute_action",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "reason": "Verifying cooling loop status after repair.",
+          "action": "verify",
+          "task_id": "verify-cooling",
+          "target": "coolant"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9933,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00058",
+      "kind": "Event",
+      "name": "Task reserved",
+      "category": "coordination",
+      "actor": "agent-engineer",
+      "detail": "Verify communications recovered. Capability and prerequisite paths checked in FalkorDB.",
+      "tick": 58,
+      "timestamp": "2026-10-18T16:24:36.199325+00:00",
+      "query": "ready_tasks,claim",
+      "data": {},
+      "evidence": [
+        "bolt",
+        "verify-comms"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00059",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 claim_task",
+      "category": "tool",
+      "actor": "agent-engineer",
+      "detail": "{\"arguments\": {\"task_id\": \"verify-comms\"}, \"ok\": true}",
+      "tick": 59,
+      "timestamp": "2026-10-18T16:24:36.657489+00:00",
+      "query": "",
+      "data": {
+        "tool": "claim_task",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "task_id": "verify-comms"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9985,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00060",
+      "kind": "Event",
+      "name": "Recovery independently verified",
+      "category": "action",
+      "actor": "agent-engineer",
+      "detail": "Communication array is operational. Verification was performed at the subsystem after repair.",
+      "tick": 60,
+      "timestamp": "2026-10-18T16:24:45.133997+00:00",
+      "query": "",
+      "data": {
+        "action": "verify",
+        "body": "bolt",
+        "from": "comms",
+        "task": "verify-comms",
+        "reason": "Verifying that the communication array is fully operational after the power bus repair."
+      },
+      "evidence": [
+        "bolt",
+        "agent-engineer",
+        "antenna",
+        "verify-comms"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00061",
+      "kind": "Event",
+      "name": "Station recovered. Mission verified.",
+      "category": "complete",
+      "actor": "MISSION CONTROL",
+      "detail": "Cooling and communications were verified operational. The graph retains every observation, assignment and action receipt.",
+      "tick": 61,
+      "timestamp": "2026-10-18T16:24:45.170128+00:00",
+      "query": "",
+      "data": {},
+      "evidence": [
+        "coolant",
+        "antenna",
+        "samples"
+      ]
+    },
+    {
+      "run_id": "mission-dfd88dfa1a6d",
+      "id": "event-00062",
+      "kind": "Event",
+      "name": "Gemini \u2192 MCP \u2192 execute_action",
+      "category": "tool",
+      "actor": "agent-engineer",
+      "detail": "{\"arguments\": {\"action\": \"verify\", \"task_id\": \"verify-comms\", \"reason\": \"Verifying that the communication array is fully operational after the power bus repair.\", \"target\": \"antenna\"}, \"ok\": true}",
+      "tick": 62,
+      "timestamp": "2026-10-18T16:24:45.678936+00:00",
+      "query": "",
+      "data": {
+        "tool": "execute_action",
+        "transport": "MCP stdio \u2192 local API",
+        "arguments": {
+          "action": "verify",
+          "task_id": "verify-comms",
+          "reason": "Verifying that the communication array is fully operational after the power bus repair.",
+          "target": "antenna"
+        },
+        "model": "gemini-3.1-flash-lite",
+        "tokens": 9940,
+        "result_summary": "Tool returned graph evidence or an action receipt."
+      },
+      "evidence": []
+    }
+  ],
+  "progress": {
+    "done": 7,
+    "total": 7
+  },
+  "metrics": {
+    "actions": 19,
+    "observations": 2,
+    "handoffs": 0
+  },
+  "auto": false,
+  "error": ""
+}

@@ -1,0 +1,187 @@
+{
+  "timestamp_utc": "2026-10-18T16:10:54.687166+00:00",
+  "controller": "live Gemini, no simulation fallback",
+  "configuration": {
+    "scenarios": [
+      "nominal",
+      "blocked-corridor",
+      "mid-mission-body-outage"
+    ],
+    "max_turns": 60,
+    "base_url": "http://127.0.0.1:8000"
+  },
+  "results": [
+    {
+      "scenario": "nominal",
+      "run_id": "mission-07e7ae6f0654",
+      "turns": [
+        {
+          "turn": 1,
+          "elapsed_ms": 13732.676,
+          "agent": "agent-engineer",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "elapsed_ms": 11141.023,
+          "agent": "agent-scout",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "elapsed_ms": 8254.871,
+          "agent": "agent-engineer",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "elapsed_ms": 7417.256,
+          "agent": "agent-scout",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 5,
+          "elapsed_ms": 13413.537,
+          "agent": "agent-engineer",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 6,
+          "elapsed_ms": 9007.812,
+          "agent": "agent-scout",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 7,
+          "elapsed_ms": 10005.422,
+          "agent": "agent-scout",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 8,
+          "elapsed_ms": 8077.952,
+          "agent": "agent-scout",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 9,
+          "elapsed_ms": 11053.262,
+          "agent": "agent-scout",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 10,
+          "elapsed_ms": 8803.551,
+          "agent": "agent-carrier",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 11,
+          "elapsed_ms": 18896.753,
+          "agent": "agent-carrier",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 12,
+          "elapsed_ms": 14614.406,
+          "agent": "agent-carrier",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 13,
+          "elapsed_ms": 11277.288,
+          "agent": "agent-carrier",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 14,
+          "elapsed_ms": 13816.42,
+          "agent": "agent-carrier",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 15,
+          "elapsed_ms": 14012.466,
+          "agent": "agent-engineer",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 16,
+          "elapsed_ms": 13980.596,
+          "agent": "agent-engineer",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 17,
+          "elapsed_ms": 8168.536,
+          "agent": "agent-engineer",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 18,
+          "elapsed_ms": 24047.107,
+          "agent": "agent-engineer",
+          "tool": "execute_action",
+          "ok": true,
+          "error": null
+        }
+      ],
+      "completed": false,
+      "failure": {
+        "type": "HTTPStatusError",
+        "http_status": 503
+      },
+      "seconds": 227.269,
+      "progress": {
+        "done": 5,
+        "total": 7
+      },
+      "metrics": {
+        "actions": 13,
+        "observations": 2,
+        "handoffs": 0
+      },
+      "model_turns": 19,
+      "verification_edges": 0,
+      "reported_tokens": 160340,
+      "fault_injected": false
+    }
+  ],
+  "scope": "Three authored demo trials; not a statistical model benchmark",
+  "model": "gemini-3.5-flash",
+  "status": "incomplete"
+}

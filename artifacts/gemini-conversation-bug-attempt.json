@@ -1,0 +1,67 @@
+{
+  "timestamp_utc": "2026-10-18T16:03:38.760806+00:00",
+  "controller": "live Gemini, no simulation fallback",
+  "configuration": {
+    "scenarios": [
+      "nominal",
+      "blocked-corridor",
+      "mid-mission-body-outage"
+    ],
+    "max_turns": 60,
+    "base_url": "http://127.0.0.1:8000"
+  },
+  "results": [
+    {
+      "scenario": "nominal",
+      "run_id": "mission-af5939fd4fea",
+      "turns": [
+        {
+          "turn": 1,
+          "elapsed_ms": 16830.475,
+          "agent": "agent-carrier",
+          "tool": "read_graph_query",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "elapsed_ms": 15746.218,
+          "agent": "agent-engineer",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "elapsed_ms": 13563.815,
+          "agent": "agent-scout",
+          "tool": "claim_task",
+          "ok": true,
+          "error": null
+        }
+      ],
+      "completed": false,
+      "failure": {
+        "type": "HTTPStatusError",
+        "http_status": 500
+      },
+      "seconds": 50.184,
+      "progress": {
+        "done": 0,
+        "total": 7
+      },
+      "metrics": {
+        "actions": 0,
+        "observations": 0,
+        "handoffs": 0
+      },
+      "model_turns": 4,
+      "verification_edges": 0,
+      "reported_tokens": 15133,
+      "fault_injected": false
+    }
+  ],
+  "scope": "Three authored demo trials; not a statistical model benchmark",
+  "model": "gemini-3.8-flash",
+  "status": "incomplete"
+}

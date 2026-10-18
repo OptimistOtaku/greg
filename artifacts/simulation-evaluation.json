@@ -1,0 +1,61 @@
+{
+  "controller": "deterministic simulation",
+  "database": "real FalkorDB",
+  "comparative_benchmark": false,
+  "results": [
+    {
+      "scenario": "nominal",
+      "completed": true,
+      "controller_steps": 25,
+      "actions": 18,
+      "observations": 2,
+      "handoffs": 0,
+      "seconds": 1.616
+    },
+    {
+      "scenario": "blocked-corridor",
+      "completed": true,
+      "controller_steps": 26,
+      "actions": 19,
+      "observations": 2,
+      "handoffs": 0,
+      "seconds": 1.493
+    },
+    {
+      "scenario": "scout-outage",
+      "completed": true,
+      "controller_steps": 27,
+      "actions": 19,
+      "observations": 2,
+      "handoffs": 1,
+      "seconds": 1.705
+    },
+    {
+      "scenario": "engineer-outage",
+      "completed": true,
+      "controller_steps": 28,
+      "actions": 20,
+      "observations": 2,
+      "handoffs": 1,
+      "seconds": 1.88
+    },
+    {
+      "scenario": "carrier-outage",
+      "completed": true,
+      "controller_steps": 28,
+      "actions": 20,
+      "observations": 2,
+      "handoffs": 1,
+      "seconds": 1.643
+    },
+    {
+      "scenario": "cargo-outage",
+      "completed": true,
+      "controller_steps": 30,
+      "actions": 21,
+      "observations": 2,
+      "handoffs": 1,
+      "seconds": 1.878
+    }
+  ]
+}

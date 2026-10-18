@@ -1,6 +1,6 @@
 # Graph Hacks: verified requirements
 
-Verified October 16, 2026 against organizer sources. Deadline: **October 18, 2026, 11:59 PM IST**. Event began October 15, 12:01 AM IST. Recheck announcements before submitting.
+Rechecked October 18, 2026 against organizer sources. Deadline: **October 18, 2026, 11:59 PM IST**. Event began October 15, 12:01 AM IST. Recheck announcements before submitting.
 
 ## Track 1
 
@@ -32,18 +32,18 @@ Any language/framework/platform is allowed. Docker, self-hosting and FalkorDB Cl
 ## Submission checklist
 
 - [ ] Register participant/team through WeMakeDevs; confirm in signed-in portal.
-- [ ] Public source repository, accessible without login.
-- [ ] README with complete setup instructions.
-- [ ] Graph data model in README (or clearly linked from it).
-- [ ] Actual Cypher queries/graph algorithms the product depends on.
-- [ ] Demo video showing working end-to-end behavior.
-- [ ] Live deployment, or complete reproducible local setup.
+- [x] Public source repository, accessible without login.
+- [x] README with complete setup instructions.
+- [x] Graph data model in README (or clearly linked from it).
+- [x] Actual Cypher queries/graph algorithms the product depends on.
+- [x] Demo video showing working end-to-end behavior.
+- [x] Live deployment, or complete reproducible local setup.
 - [ ] Track 01 explicitly selected in submission.
-- [ ] AI assistance disclosed.
-- [ ] No secrets, private data, broken links or unlicensed assets.
+- [x] AI assistance disclosed.
+- [x] No secrets, private data, broken links or unlicensed assets.
 - [ ] Submission saved and checked before October 18, 11:59 PM IST.
 
-The public pages do not establish video duration, form-specific fields, weighted judging criteria, or final upload constraints. Check the authenticated submission portal rather than inventing requirements. We have not registered or submitted anything from this chat.
+The public pages do not establish video duration, form-specific fields, weighted judging criteria, or final upload constraints. Check the authenticated submission portal rather than inventing requirements. The participant is signed in separately in Chrome. Registration/team state and the final saved submission have not been verified from this chat. The public repository, demo film, local setup, graph model, executed Cypher, disclosures, and submission copy are prepared; see [submission.md](submission.md).
 
 The main page and rules permit multiple tracks. The organizer tutorial contains narrower wording about entering one; for this project there is no practical conflict because our chosen entry is Track 01 only.
 

@@ -1,0 +1,27 @@
+{
+  "date_ist": "2026-10-18",
+  "track": "01 — Agents That Act on Connected Data",
+  "source_repository": "https://github.com/OptimistOtaku/greg",
+  "production_frontend_build": "passed: TypeScript and Vite production build",
+  "staged_credential_scan": "passed: 107 staged files; no configured local secrets found",
+  "markdown_local_links": "passed: 14 Markdown files, no missing local link targets",
+  "python_compile": "passed: greg and scripts compileall",
+  "demo_export": "passed: complete audio/video decode, 90 seconds, 1920x1080, 30 fps",
+  "thumbnail": {
+    "file": "artifacts/video/youtube-thumbnail.png",
+    "dimensions": [1672, 941],
+    "bytes": 1931108,
+    "origin": "AI-generated promotional illustration; prompt retained"
+  },
+  "latest_integration_rerun": {
+    "status": "environment blocked",
+    "reason": "Docker Desktop engine unavailable; local FalkorDB at 127.0.0.1:6379 could not be reached",
+    "observed_results": "6 passed, 2 failed, 9 fixture errors; database-dependent checks did not complete",
+    "interpretation": "This is not a fresh integration pass. Previously recorded successful tests and benchmarks remain historical artifacts."
+  },
+  "account_steps": {
+    "organizer_session": "Participant reports signed in in Chrome; Chrome not connected to agent browser controls",
+    "youtube": "Participant is uploading the film; public/unlisted URL not yet supplied",
+    "organizer_form": "Not submitted or verified by the agent"
+  }
+}

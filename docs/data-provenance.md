@@ -9,7 +9,7 @@
 | Station and robot meshes | Original procedural project code; frontend only |
 | Earth / clouds / night textures | NASA public imagery; source links and credits in `web/public/textures/CREDITS.md`; frontend only |
 | Fonts and software libraries | Bundled package dependencies with their upstream licenses; no claim of authorship |
-| Demo narration | Gemini TTS synthetic prebuilt Charon voice; transcript and metadata in `artifacts/video/` |
+| Demo narration | Gemini TTS synthetic prebuilt Charon voice; transcript and metadata generated locally by `scripts/video_narration.py` |
 | Demo music and sound design | Original procedural synthesis in `scripts/prepare_video.py` |
 | YouTube thumbnail | AI-generated promotional illustration using the project's robot screenshot as reference; not a product screenshot |
 
@@ -17,6 +17,5 @@ The operational graph contains no private, personal, paywalled, login-protected,
 or otherwise restricted source information. Local credentials belong in ignored
 `.env` files and are not part of the submission.
 
-The thumbnail uses built-in image generation. The full production prompt is
-saved in `artifacts/video/thumbnail-prompt.txt`; the source screenshot is a frame
-from the project's recorded 3D replay. It depicts the product concept artistically.
+The thumbnail uses image generation with a frame from the project's recorded
+3D replay as reference. It depicts the product concept artistically.

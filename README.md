@@ -7,7 +7,7 @@ shared world, capabilities, task dependencies, evidence and action receipts live
 in FalkorDB. The synthetic orbital station is its stress-test environment.
 
 **[Watch / download the 90-second demo](https://github.com/OptimistOtaku/greg/releases/tag/v0.1.0-demo)** ·
-**[Judge walkthrough](docs/judge-walkthrough.md)** · **[Submission overview](docs/submission.md)**
+**[Architecture](docs/product.md)** · **[Demo walkthrough](docs/demo.md)**
 
 [![GREG — AI crew sharing graph memory above Earth; promotional illustration](artifacts/video/youtube-thumbnail.png)](https://github.com/OptimistOtaku/greg/releases/tag/v0.1.0-demo)
 
@@ -217,7 +217,7 @@ uv run python scripts/evaluate_gemini.py
 uv run python scripts/evaluate_gemini.py --resume
 ```
 
-## Data and submission
+## Data and demo
 
 All topology, robot designs, mission descriptions and fault data are original
 synthetic content. No private/restricted data or external models/assets are loaded
@@ -227,11 +227,8 @@ real-world robotics reliability, or model-training improvements.
 
 This source repository is public. The recorded demo, captions, and thumbnail are
 available in the [demo release](https://github.com/OptimistOtaku/greg/releases/tag/v0.1.0-demo).
-Complete local setup satisfies the deployment alternative; no public live backend
-is claimed. The organizer's account-specific form must still be saved and checked
-with **Track 01** selected. [Submission copy](docs/submission.md),
-[data/asset provenance](docs/data-provenance.md), and
-[technical review guide](docs/judge-walkthrough.md) are included.
+Complete local setup is provided; no public live backend is claimed.
+See [data and asset provenance](docs/data-provenance.md) for source details.
 
 ## Initial environment setup
 
@@ -260,21 +257,5 @@ docker compose stop
 The named volume preserves database files across normal container recreation. Do not remove that volume if you want to retain data. The image is pinned by digest in Compose and `.env.example`. The verified data directory is `/var/lib/falkordb/data`; confirm with `docker compose exec -T falkordb redis-cli CONFIG GET dir` when changing images.
 
 For Cloud, set the host, port, credentials and TLS setting in `.env`, and run only the Python check. Compose is intended for local unauthenticated use and binds ports only to localhost; `.env` Cloud credentials are consumed by Python, not by the local container.
-
-## Preparation records
-
-- [Official requirements and submission checklist](docs/hackathon-requirements.md)
-- [Original track preparation and brainstorming criteria](docs/track-preparation.md)
-- [Environment verification status](docs/setup-status.md)
-
-## AI assistance disclosure
-
-Codex assisted research, planning, design, implementation, debugging, evaluation,
-documentation, and media production. Runtime agents use Gemini. The film uses a
-synthetic Gemini TTS voice and an original procedural score; its thumbnail is
-AI-generated promotional art. The participant chose the product direction and
-requirements and requested iterative revisions, and must personally review and
-understand the graph model, queries, architecture, and technical decisions. No
-claim of unaided development is made.
 
 Official brief: [Graph Hacks](https://www.wemakedevs.org/hackathons/falkordb). Rules: [submission requirements](https://www.wemakedevs.org/hackathons/falkordb/rules).

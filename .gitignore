@@ -12,7 +12,24 @@ dist/
 *.log
 .DS_Store
 web/public/film-assets/
-artifacts/video/*.wav
-artifacts/video/*.webm
-artifacts/video/*.mp4
-artifacts/video/qa-frames/
+# Local media-production outputs; keep only public presentation assets in Git.
+/artifacts/video/*
+!/artifacts/video/cover.jpg
+!/artifacts/video/greg-demo.srt
+!/artifacts/video/youtube-thumbnail.png
+
+# Local planning, submission copy, and publishing drafts.
+/docs/build-plan.md
+/docs/hackathon-requirements.md
+/docs/judge-walkthrough.md
+/docs/setup-status.md
+/docs/submission.md
+/docs/track-preparation.md
+/docs/youtube.md
+/docs/blog.md
+/docs/blog-medium.md
+/artifacts/submission-verification.json
+/artifacts/blog/
+/artifacts/greg-medium-package.zip
+/artifacts/medium-preview.png
+/scripts/prepare_medium.py

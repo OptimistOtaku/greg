@@ -1,4 +1,4 @@
-/* The embedded Codex browser can be narrower/shorter than a laptop window. */
+/* The embedded browser can be narrower/shorter than a laptop window. */
 body{min-width:700px}.app-shell{height:100dvh;min-height:0;overflow:hidden}.workspace{height:auto;min-height:0;flex:1}.viewport{min-height:0}.channel-toggle,.channel-close{display:none}
 @media(max-width:950px){
  .channel-toggle{display:flex;align-items:center;gap:6px;font-size:9px;color:#92b4c1;padding:7px 8px;border:1px solid #304855;border-radius:3px}

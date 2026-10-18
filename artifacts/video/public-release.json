@@ -1,9 +1,0 @@
-{
-  "release_url": "https://github.com/OptimistOtaku/greg/releases/tag/v0.1.0-demo",
-  "source_commit": "36a684a0958bf86f89703b54a08df4e81d8c0ca4",
-  "assets": {
-    "greg-demo-1080p.mp4": "https://github.com/OptimistOtaku/greg/releases/download/v0.1.0-demo/greg-demo-1080p.mp4",
-    "greg-demo.srt": "https://github.com/OptimistOtaku/greg/releases/download/v0.1.0-demo/greg-demo.srt",
-    "youtube-thumbnail.png": "https://github.com/OptimistOtaku/greg/releases/download/v0.1.0-demo/youtube-thumbnail.png"
-  }
-}

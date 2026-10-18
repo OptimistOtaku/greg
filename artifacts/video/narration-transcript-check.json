@@ -1,0 +1,8 @@
+{
+  "model": "gemini-3.1-flash-lite",
+  "normalized_transcript_similarity": 0.9938,
+  "expected_words": 129,
+  "transcribed_words": 131,
+  "transcript": "Three robots. Two failed systems. One shared understanding. This is Greg, an AI crew coordinated through a Falcor DB knowledge graph. On Orpheus, cooling and communications are degraded. The crew investigates until Bolt goes offline. The engineer transfers to Echo, a different body, a different location. Shared evidence survives. Two independent observations connect to one upstream power bus. The graph determines which tasks are ready, which routes are open, and which body can act. Moss delivers the replacement relay. Echo repairs the bus. The crew verifies both systems before declaring recovery. These are recorded actions from a real Gemini run, replayed faster for this film. Three authored live model scenarios completed, including a sealed corridor and a mid-mission body failure. 60 deterministic recovery runs also passed. Greg, shared knowledge, distributed action.",
+  "scope": "Automated ASR sanity check, not a substitute for listening"
+}

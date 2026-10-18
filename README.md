@@ -6,6 +6,15 @@ Graph Hacks 2026 · **Track 01: Agents That Act on Connected Data**.
 shared world, capabilities, task dependencies, evidence and action receipts live
 in FalkorDB. The synthetic orbital station is its stress-test environment.
 
+**[Watch / download the 90-second demo](https://github.com/OptimistOtaku/greg/releases/tag/v0.1.0-demo)** ·
+**[Judge walkthrough](docs/judge-walkthrough.md)** · **[Submission overview](docs/submission.md)**
+
+[![GREG — AI crew sharing graph memory above Earth; promotional illustration](artifacts/video/youtube-thumbnail.png)](https://github.com/OptimistOtaku/greg/releases/tag/v0.1.0-demo)
+
+The cover is AI-generated promotional art. The demo itself reconstructs an actual
+recorded Gemini mission with time compression, shows the changing FalkorDB graph,
+and labels its synthetic environment. [Film sources and reproduction](docs/video.md).
+
 The crew inspects cooling and communication failures, correlates a shared power
 dependency, delivers a replacement relay, repairs the bus and verifies recovery.
 Seal a corridor or disable a robot to watch graph-driven rerouting and an agent
@@ -22,6 +31,10 @@ same bounded crew tools.
 ## Run mission control
 
 Keep Docker Desktop running. From this checkout, after configuring `.env`:
+
+Prerequisites: Python 3.12–3.13, uv, Node.js/npm, and Docker with Linux containers.
+For a fresh checkout, copy `.env.example` to `.env` first; leave `GEMINI_API_KEY`
+empty to run simulation. Do not overwrite an existing `.env`.
 
 ```powershell
 uv sync --locked
@@ -212,9 +225,13 @@ into the graph. Geometry is generated in code; dependencies and bundled fonts
 retain upstream licenses. This prototype does not establish research novelty,
 real-world robotics reliability, or model-training improvements.
 
-The submission requires publishing this source repository, recording a working
-demo video, and completing the organizer's form with **Track 01**. Complete local
-setup is provided; no hosted deployment or completed submission is claimed.
+This source repository is public. The recorded demo, captions, and thumbnail are
+available in the [demo release](https://github.com/OptimistOtaku/greg/releases/tag/v0.1.0-demo).
+Complete local setup satisfies the deployment alternative; no public live backend
+is claimed. The organizer's account-specific form must still be saved and checked
+with **Track 01** selected. [Submission copy](docs/submission.md),
+[data/asset provenance](docs/data-provenance.md), and
+[technical review guide](docs/judge-walkthrough.md) are included.
 
 ## Initial environment setup
 
@@ -252,6 +269,12 @@ For Cloud, set the host, port, credentials and TLS setting in `.env`, and run on
 
 ## AI assistance disclosure
 
-Codex is being used for research, planning, scaffolding, implementation assistance and verification. The participant must review and understand the submitted graph model, queries, architecture and technical decisions. Keep this disclosure current as the project develops.
+Codex assisted research, planning, design, implementation, debugging, evaluation,
+documentation, and media production. Runtime agents use Gemini. The film uses a
+synthetic Gemini TTS voice and an original procedural score; its thumbnail is
+AI-generated promotional art. The participant chose the product direction and
+requirements and requested iterative revisions, and must personally review and
+understand the graph model, queries, architecture, and technical decisions. No
+claim of unaided development is made.
 
 Official brief: [Graph Hacks](https://www.wemakedevs.org/hackathons/falkordb). Rules: [submission requirements](https://www.wemakedevs.org/hackathons/falkordb/rules).

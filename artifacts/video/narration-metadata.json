@@ -1,0 +1,6 @@
+{
+  "synthetic_voice": true,
+  "voice": "Charon",
+  "model": "gemini-2.5-flash-preview-tts",
+  "seconds": 75.051
+}

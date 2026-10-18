@@ -1,0 +1,18 @@
+{
+  "file": "greg-demo-1080p.mp4",
+  "bytes": 28505755,
+  "duration_seconds": 90.0,
+  "fps": 30.0,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "video_codec": "h264",
+  "audio": "AAC stereo, 48 kHz, normalized target -16 LUFS",
+  "decode_check": "passed, complete video and audio",
+  "captions": "burned in; companion greg-demo.srt",
+  "source": "Recorded Gemini outage mission action receipts; directed cinematic reconstruction",
+  "narration": "Synthetic Charon voice generated with Gemini TTS",
+  "music": "Original procedural 120 BPM score",
+  "credits": "Station geometry: project code. Earth imagery: NASA Blue Marble, credits in web/public/textures/CREDITS.md."
+}

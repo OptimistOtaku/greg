@@ -1,0 +1,10 @@
+{
+  "topology_source": "web/public/film-assets/outage.json",
+  "mission": "mission-6cfc9b866988",
+  "shown_final_relationships": 10,
+  "supported_by_observations": 2,
+  "engineer_body": "echo",
+  "observation_owner": "agent-engineer",
+  "illustrative_access_lane": "separate dotted lane, not graph relationships",
+  "validation": "passed against recorded FalkorDB snapshot"
+}

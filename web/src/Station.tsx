@@ -161,3 +161,6 @@ export default function Station(props:Props){
     {expanded&&selectedEntity&&<div className="orbital-selection"><small>{selectedEntity.kind}</small><strong>{selectedEntity.name}</strong><span>{selectedEntity.status||selectedEntity.role||selectedEntity.sector as string}</span></div>}
   </div>;
 }
+
+// Shared geometry used by the offline cinematic replay renderer.
+export { Room, Robot, Corridor, Knowledge };

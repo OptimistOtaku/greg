@@ -11,3 +11,8 @@ dist/
 *.tsbuildinfo
 *.log
 .DS_Store
+web/public/film-assets/
+artifacts/video/*.wav
+artifacts/video/*.webm
+artifacts/video/*.mp4
+artifacts/video/qa-frames/

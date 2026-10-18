@@ -1,0 +1,53 @@
+1
+00:00:04,000 --> 00:00:09,500
+Three robots. Two failed systems. One shared understanding.
+
+2
+00:00:09,500 --> 00:00:16,322
+This is Greg: an AI crew coordinated through a FalkorDB knowledge
+graph.
+
+3
+00:00:16,322 --> 00:00:24,999
+On Orpheus, cooling and communications are degraded. The crew
+investigates, until Bolt goes offline.
+
+4
+00:00:24,999 --> 00:00:33,313
+The engineer transfers to Echo. A different body. A different
+location. Shared evidence survives.
+
+5
+00:00:33,313 --> 00:00:39,176
+Two independent observations connect to one upstream power bus.
+
+6
+00:00:39,176 --> 00:00:48,556
+The graph determines which tasks are ready, which routes are open,
+and which body can act.
+
+7
+00:00:48,556 --> 00:00:54,249
+Moss delivers the replacement relay. Echo repairs the bus.
+
+8
+00:00:54,249 --> 00:00:59,450
+The crew verifies both systems before declaring recovery.
+
+9
+00:00:59,450 --> 00:01:07,658
+These are recorded actions from a real Gemini run, replayed faster
+for this film.
+
+10
+00:01:07,658 --> 00:01:16,228
+Three authored live-model scenarios completed, including a sealed
+corridor and a mid-mission body failure.
+
+11
+00:01:16,228 --> 00:01:20,151
+Sixty deterministic recovery runs also passed.
+
+12
+00:01:20,151 --> 00:01:24,000
+Greg. Shared knowledge. Distributed action.
